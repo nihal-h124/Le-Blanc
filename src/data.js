@@ -73,4 +73,29 @@ export const products = [
         id:8,
         img:"https://i.pinimg.com/736x/2b/86/77/2b8677bfa43b0b69c602c28293bf35d0.jpg",
     },
+    {
+        id:9,
+        img:"https://i.pinimg.com/736x/2d/77/c6/2d77c68eb47405e2215e5639329c0e35--summer-wardrobe-capsule-wardrobe.jpg",
+    },
+    {
+        id:10,
+        img:"https://baliproducts.com/wp-content/uploads/2016/01/Fotolia_123943741_M.jpg",
+    },
+    {
+        id:11,
+        img:"https://i.pinimg.com/736x/33/f5/a8/33f5a8c6052e8daf42ab149a21b99a56.jpg",
+    },
+    {
+        id:12,
+        img:"https://img.diytrade.com/smimg/2935931/49416273-11634370-0/Heated_Clothing_Women_s_Thick_Winter_Vest_Electric_Heating_Waistcoat/b17.jpg",
+    },
+    {
+        id:13,
+        img:"https://i.pinimg.com/736x/72/02/9e/72029e2cdc3a46059aa8675843bc0a1b.jpg",
+    },
+    {
+        id:14,
+        img:"https://i.pinimg.com/736x/63/55/3c/63553c8ae4ff864f318883bc49119e99--france.jpg",
+    },
+    
 ];
