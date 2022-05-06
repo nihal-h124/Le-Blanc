@@ -7,7 +7,6 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     display: flex;
-    /* background-color: mediumturquoise; */
     position: relative;
     overflow: hidden;
 `
@@ -53,7 +52,7 @@ const InfoContainer = styled.div`
     padding: 50px;
 `
 const Title = styled.h1`
-    font-size: 70px;
+    font-size: 50px;
 `
 const Desc = styled.p`
     margin: 50px 0px;
@@ -96,17 +95,6 @@ const Slider = () => {
                  </InfoContainer>
              </Slide>
             ))}
-           
-            {/* <Slide>
-                <ImageContainer>
-                    <Image src="https://blog.radissonblu.com/wp-content/uploads/2014/01/gothenburg-woman-shopping-clothes-1000x667.jpg" />
-                </ImageContainer>
-                <InfoContainer>
-                    <Title>SUMMER SALE</Title>
-                    <Desc>SHOP NOW AND SAVE UPTO 20% ON SELECT MERCHANDISE</Desc>
-                    <Button>SHOP</Button>
-                </InfoContainer>
-            </Slide> */}
         </Wrapper>
         <Arrow direction = "right" onClick={()=>handleClick("right")}>
             <ArrowRightOutlined/>

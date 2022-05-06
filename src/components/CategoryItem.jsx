@@ -1,15 +1,28 @@
-import { Container, styled } from '@material-ui/core'
-// import { styled } from '@material-ui/styles'
+import styled from 'styled-components'
 import React from 'react'
 
 const Container = styled.div`
-    
+  flex:1;
+  margin: 3px;
+  height: 70vh;
 `
+const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`
+const Info = styled.div``
+const Title = styled.h1``
+const Button = styled.button``
 
-const CategoryItem = () => {
+const CategoryItem = ({item}) => {
   return (
     <Container>
-
+      <Image src={item.img}/>
+      <Info>
+        <Title>{item.title}</Title>
+        <Button>SHOP</Button>
+      </Info>
     </Container>
   )
 }
