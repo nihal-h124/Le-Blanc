@@ -39,3 +39,38 @@ export const categories = [
         title: "T-SHIRTS",
     },
 ];
+
+export const products = [
+    {
+        id:1,
+        img:"https://productphoto-cdn.sirv.com/Portfolio/Clothing/ClothingPhotography_24.jpg?quality=92",
+    },
+    {
+        id:2,
+        img:"https://productphoto-cdn.sirv.com/Portfolio/Clothing/ClothingPhotography_4.jpg?quality=92",
+    },
+    {
+        id:3,
+        img:"https://i.pinimg.com/736x/09/18/38/091838e3e59e7fc33ee242490f99854c.jpg",
+    },
+    {
+        id:4,
+        img:"https://assets.bigcartel.com/product_images/125696412/Screen_shot_2013-10-09_at_9.25.18_AM.jpg?auto=format&fit=max&h=1200&w=1200",
+    },
+    {
+        id:5,
+        img:"https://assets.bigcartel.com/product_images/76058412/BUTAmodel.jpg?auto=format&fit=max&h=1200&w=1200",
+    },
+    {
+        id:6,
+        img:"https://blankteeshirts.com.au/img/products/american-apparel-tr480-womens-tri--blend-scrimmage-t-shirt-white.jpg",
+    },
+    {
+        id:7,
+        img:"https://2.bp.blogspot.com/-bky2W9uXLMg/T6XX-G4FcTI/AAAAAAAAA10/GijtdEe9KS8/s1600/Untitled2.jpg",
+    },
+    {
+        id:8,
+        img:"https://i.pinimg.com/736x/2b/86/77/2b8677bfa43b0b69c602c28293bf35d0.jpg",
+    },
+];
