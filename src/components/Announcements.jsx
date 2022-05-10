@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Announcements = () => {
   return (
-    <Container>Limited Period only: SALE for 50% off!!</Container>
+    <Container>Begrenztes Angebot: SALE für 50% Rabatt !!!!</Container>
   )
 }
 

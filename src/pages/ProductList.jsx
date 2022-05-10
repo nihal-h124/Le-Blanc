@@ -20,9 +20,12 @@ const Filter = styled.div`
 const TextFilter = styled.span`
     font-size: 20px;
     font-weight: 500;
+    margin-right: 10px;
 `
 const Select = styled.select`
     margin: 2px;
+    padding: 5px;
+    margin-right: 10px;
 `
 const Option = styled.option``
 
@@ -31,25 +34,25 @@ const ProductList = () => {
     <Container>
         <Announcements/>
         <Navbar/>
-        <Title>Dresses</Title>
+        <Title>Kleider</Title>
         <FilterContainer>
             <Filter><TextFilter>Filter:</TextFilter>
             <Select>
                 <Option disabled selected>
-                    Color
+                    Farbe
                 </Option>
-                <Option>Black</Option>
-                <Option>White</Option>
-                <Option>Yellow</Option>
-                <Option>Blue</Option>
-                <Option>LightBlue</Option>
+                <Option>Schwarz</Option>
+                <Option>Wieß</Option>
+                <Option>Gelb</Option>
+                <Option>Blau</Option>
+                <Option>Pink</Option>
                 <Option>Orange</Option>
-                <Option>Red</Option>
+                <Option>Rot</Option>
             </Select>
         
             <Select>
                 <Option disabled selected>
-                    Size
+                    Groß
                 </Option>
                 <Option>XS</Option>
                 <Option>S</Option>
@@ -64,10 +67,10 @@ const ProductList = () => {
                 <TextFilter>Sort:</TextFilter>
             <Select>
                 <Option disabled selected>
-                    Latest
+                    Neueste
                 </Option>
-                <Option>Highest</Option>
-                <Option>Lowest</Option>
+                <Option>Höchst</Option>
+                <Option>Unterste</Option>
             </Select>
             </Filter>
         </FilterContainer>

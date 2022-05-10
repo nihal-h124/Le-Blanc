@@ -4,7 +4,6 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     height: 60vh;
-    /* background-color: #fff; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,9 +42,9 @@ const Newsletter = () => {
   return (
     <Container>
         <Title>Newsletter</Title>
-        <Desc>Stay updated with all our products</Desc>
+        <Desc>Bleiben Sie mit all unseren Produkten auf dem Laufenden</Desc>
         <InputContainer>
-            <Input placeholder='Please enter your email'/>
+            <Input placeholder='Bitte geben Sie Ihre E-Mail-Adresse ein'/>
             <Button>
                 <Send/>
             </Button>
