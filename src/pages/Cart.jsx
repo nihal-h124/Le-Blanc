@@ -1,3 +1,4 @@
+import { Add, Remove } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
 import Announcements from '../components/Announcements'
@@ -75,12 +76,52 @@ const PriceInfo = styled.div`
     align-items: center;
     justify-content: center;
 `
+const ProductAmountContainer = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+`
+const ProductAmount = styled.div`
+    font-size: 25px;
+    margin: 5px;
+`
+const ProductPrice = styled.div`
+    font-size: 30px;
+    font-weight: 200;
+`
 
+const Hr = styled.hr`
+    background-color: gray;
+    border: none;
+    height: 1px;
+`
 
 const Summary = styled.div`
     flex:1;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
 `
-
+const SummaryTitle = styled.h1`
+    font-weight: 200;
+`
+const SummaryItem = styled.div`
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: ${props=>props.type === "total" && "500"};
+    font-size: ${props=>props.type === "total" && "25px"};
+`
+const SummaryItemText = styled.span``
+const SummaryItemPrice = styled.span``
+const Button = styled.button`
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color:white;
+    font-weight: 600;
+`
 
 
 const Cart = () => {
@@ -112,11 +153,58 @@ const Cart = () => {
                             </Details>
                         </ProductInfo>
                     <PriceInfo>
-                        price
+                        <ProductAmountContainer>
+                            <Add/>
+                            <ProductAmount>1</ProductAmount>
+                            <Remove/>
+                        </ProductAmountContainer>
+                        <ProductPrice>49,99 €</ProductPrice>
+                    </PriceInfo>
+                 </Product>
+                
+                <Hr/>
+
+                 <Product>
+                        <ProductInfo>
+                            <Image src="https://cf.shopee.com.my/file/5d3b71f79369d17f51c23c15baa8fc1d_tn"/>
+                            <Details>
+                                <ProductName><b>Produkt:</b>Damen Mütze</ProductName>
+                                <ProductId><b>ID:</b>3564684654</ProductId>
+                                <ProductColor color="red"/>
+                                <ProductSize><b>Groß:</b>M</ProductSize>
+                            </Details>
+                        </ProductInfo>
+                    <PriceInfo>
+                        <ProductAmountContainer>
+                            <Add/>
+                            <ProductAmount>1</ProductAmount>
+                            <Remove/>
+                        </ProductAmountContainer>
+                        <ProductPrice>9,99 €</ProductPrice>
                     </PriceInfo>
                  </Product>
                 </Info>
-                <Summary>summary</Summary>
+                
+                <Summary>
+                    <SummaryTitle>Bestellübersicht</SummaryTitle>
+                    <SummaryItem>
+                        <SummaryItemText>Zwischensumme</SummaryItemText>
+                        <SummaryItemPrice>59,99 €</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryItem>
+                        <SummaryItemText>Versand</SummaryItemText>
+                        <SummaryItemPrice>0,00 €</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryItem>
+                        <SummaryItemText>Rabatt</SummaryItemText>
+                        <SummaryItemPrice>5%</SummaryItemPrice>
+                    </SummaryItem>
+                    <SummaryItem type="total">
+                        <SummaryItemText>Gesamtpreis</SummaryItemText>
+                        <SummaryItemPrice>57,00 €</SummaryItemPrice>
+                    </SummaryItem>
+                    <Button>JETZT BESTELLEN</Button>
+                </Summary>
             </Bottom>
         </Wrapper>
         <Footer/>
