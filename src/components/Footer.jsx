@@ -1,9 +1,11 @@
 import { ContactPhoneOutlined, EmailOutlined, Facebook, Instagram, LocationOnOutlined, Pinterest, Twitter } from '@material-ui/icons'
 import React from 'react'
 import styled from 'styled-components'
+import { mobile } from '../responsive'
 
 const Container = styled.div`
     display: flex;
+    ${mobile({ flexDirection: "column" })}
 `
 const Left = styled.div`
     flex:1;
@@ -33,6 +35,7 @@ const Center = styled.div`
     flex:1;
     padding: 20px;
     align-items: left;
+    ${mobile({ display: "none" })}
 `
 const Right = styled.div`
     flex:1;
