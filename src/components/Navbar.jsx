@@ -5,6 +5,7 @@ import React from 'react'
 import styled from 'styled-components'
 // import './container.css'
 import { mobile } from '../responsive';
+import { useHistory } from 'react-router-dom';
 
 const Container = styled.div`
   height: 60px; 
@@ -67,6 +68,13 @@ const MenuItem = styled.div`
   margin-left: 25px;
   ${mobile({ fontSize:"10px", marginLeft:"10px"})}
 `
+const Button = styled.button``
+
+const Link = styled.div``
+
+const handleClick = (e) => {
+  this.props.history.push('./pages/Register');
+}
 
 const Navbar = () => {
   return (
@@ -81,12 +89,15 @@ const Navbar = () => {
           </Left>
           
           <Center>
-            <Logo>E-Kart</Logo>
+            <Logo>Le 'Blanc</Logo>
           </Center>
          
           <Right>
-            <MenuItem>Registrieren</MenuItem>
-            <MenuItem>Anmelden</MenuItem>
+            <Button onClick={handleClick}>Registrieren</Button>
+            {/* <Button onClick={() => {
+              history.push("./pages/Register");
+            }}></Button> */}
+            <Button onClick={handleClick}>Anmelden</Button>
             <MenuItem>
               <Badge badgeContent={4} color="primary">
                 <ShoppingCartOutlined />

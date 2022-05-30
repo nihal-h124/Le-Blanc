@@ -17,6 +17,7 @@ const Logo = styled.h1``
 
 const Desc = styled.p`
     margin: 20px 0px;
+    text-align: justify;
 `
 const SocialContainer = styled.div`
     display: flex;
@@ -75,10 +76,13 @@ const Footer = () => {
   return (
     <Container>
         <Left>
-            <Logo>E-Kart</Logo>
+            <Logo>Le'Blanc GmbH</Logo>
             <Desc>
-                pemg elmgemg emgeopmge eopmrüwpermwe fwfpomwf pwqoekmopfmwpfm 
-                wopefowpf wpoekmfomwef opwefpmw wejfoiwj iwoojefiojw woijefioj
+            Der Inhalt dieser Website ist urheberrechtlich geschützt und Eigentum 
+            der Le'Blanc GmbH. Das Geschäftskonzept von Le'Blanc ist: Mode und 
+            Qualität zum besten Preis auf auf nachhaltige Weise. Seit seiner 
+            Gründung im Jahr 2010 wächst das Unternehmen langsam und konkurriert
+            bereits mit anderen weltweit führenden Modeunternehmen.
             </Desc>
                 <SocialContainer>
                     <SocialIcon>
